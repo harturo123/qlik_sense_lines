@@ -1,0 +1,17 @@
+<style>/* Horizontal line */
+div.horizontal_line{
+    border-top: {{settings.thickness}}px {{settings.style}} {{settings.color}};
+	width: 100%;
+	position: absolute;
+	bottom: {{settings.margin}}%;
+}
+
+/* Vertical line */
+div.vertical_line{
+    border-left: {{settings.thickness}}px {{settings.style}} {{settings.color}};
+    height: 100%;
+	width: {{settings.thickness}}px;
+	position: absolute;
+	left: {{settings.margin}}%;
+}	</style>
+<div><div class="{{settings.line_type}}"></div></div>

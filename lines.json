@@ -1,0 +1,96 @@
+{
+  "name": "Lines",
+  "description": "Line dividers.",
+  "author": "",
+  "library": "Lines",
+  "meta": {
+    "type": "other"
+  },
+  "properties": {
+    "sections": [
+      {
+        "type": "header",
+        "order": 0,
+        "parent": "qw-pe-dropzone0-0",
+        "ref": "header1",
+        "label": "Settings"
+      }
+    ],
+    "settings": [
+      {
+        "component": "dropdown",
+        "type": "string",
+        "defaultValue": "horizontal_line",
+        "options": [
+          {
+            "label": "Vertical",
+            "value": "vertical_line"
+          },
+          {
+            "label": "Horizontal",
+            "value": "horizontal_line"
+          }
+        ],
+        "order": 0,
+        "parent": "header1",
+        "ref": "line_type",
+        "label": "Layout"
+      },
+      {
+        "type": "string",
+        "expression": "optional",
+        "defaultValue": "#808080",
+        "order": 2,
+        "parent": "header1",
+        "ref": "color",
+        "label": "Color (HTML)"
+      },
+      {
+        "type": "string",
+        "expression": "optional",
+        "defaultValue": "50",
+        "order": 4,
+        "parent": "header1",
+        "ref": "margin",
+        "label": "Margin (0-100)"
+      },
+      {
+        "component": "dropdown",
+        "type": "string",
+        "defaultValue": "solid",
+        "options": [
+          {
+            "label": "Solid",
+            "value": "solid"
+          },
+          {
+            "label": "Dashed",
+            "value": "dashed"
+          },
+          {
+            "label": "Dotted",
+            "value": "dotted"
+          },
+          {
+            "label": "Double",
+            "value": "double"
+          }
+        ],
+        "order": 1,
+        "parent": "header1",
+        "ref": "style",
+        "label": "Style"
+      },
+      {
+        "type": "string",
+        "expression": "optional",
+        "defaultValue": "1",
+        "order": 3,
+        "parent": "header1",
+        "ref": "thickness",
+        "label": "Thickness (px)"
+      }
+    ]
+  },
+  "dependencies": {}
+}
